@@ -35,7 +35,9 @@ def turn(board)
 end
 
 def play(board)
-  until board == ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
+  turn_count = 0
+  while turn_count < 9
     turn(board)
+    turn_count += 1
   end
 end
